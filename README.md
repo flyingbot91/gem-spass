@@ -11,7 +11,7 @@ source env/bin/activate
 env/bin/python -m pip install --upgrade pip
 env/bin/python -m pip install -r requirements.txt
 # Run server
-python3 manage.py runserver 0.0.0.0:8888
+python3 gem/manage.py runserver 0.0.0.0:8888
 ```
 
 ## How to test
