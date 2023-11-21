@@ -48,6 +48,15 @@ curl -v --header "Content-Type: application/json" -d @./data/payload1.json http:
 [{"name": "windpark1", "p": 90.0}, {"name": "windpark2", "p": 21.6}, {"name": "gasfiredbig1", "p": 368.4}, {"name": "gasfiredbig2", "p": 0}, {"name": "gasfiredsomewhatsmaller", "p": 0}, {"name": "tj1", "p": 0.0}]hans@hans-desktop:~/proyectos/github/gem$ 
 ```
 
+## How to dockerize it
+
+```
+# Build the image
+docker build -t gem-spass .
+# Run it
+docker run --name gem-spass -d -it -p 8888:8888 gem-spass
+```
+
 ## Logging
 
 Logs can be found at **/tmp/gem.log**.
